@@ -1,11 +1,11 @@
-let studenti = [
+const studenti = [
     {
         nome: 'marco della rovere',
         id: 213,
         grades: 78
     },
     {
-        nome: paola cortellessa,
+        nome: 'paola cortellessa',
         id: 110,
         grades: 96
     },
@@ -35,3 +35,14 @@ let studenti = [
         grades: 84
     }
 ];
+// stampa array di stringhe nomi studente in maiuscolo
+const nomiStudenti = studenti.map((element) => element.nome.toUpperCase());
+console.log(nomiStudenti)
+
+// stampa array di oggetti 'studente' che hanno un totale di voti superiore a 70
+const studentivotomaggioresettanta = studenti.map((element) => {
+if (element.grades > 70) {
+    console.log(element.nome, element.grades)
+}
+});
+
