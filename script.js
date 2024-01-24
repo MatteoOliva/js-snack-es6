@@ -12,3 +12,11 @@ const vips = [
     'Maneskin',
   ];
 
+  const listaOspiti = vips.map((vip, index) => {
+    return {
+        NomeTavolo: 'tavoloVip',
+        NomeOspite: `${vip}`,
+        PostoOccupato: `${index}`
+    }
+  });
+  console.log(listaOspiti)
