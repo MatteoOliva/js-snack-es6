@@ -16,7 +16,7 @@ const vips = [
     return {
         NomeTavolo: 'tavoloVip',
         NomeOspite: `${vip}`,
-        PostoOccupato: `${index}`
+        PostoOccupato: `${index + 1}`
     }
   });
   console.log(listaOspiti)
