@@ -15,8 +15,8 @@ const vips = [
   const listaOspiti = vips.map((vip, index) => {
     return {
         NomeTavolo: 'tavoloVip',
-        NomeOspite: `${vip}`,
-        PostoOccupato: `${index + 1}`
+        NomeOspite: vip,
+        PostoOccupato: index + 1
     }
   });
   console.log(listaOspiti)
