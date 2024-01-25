@@ -39,7 +39,6 @@ const teams = [
 //   - modificare il contenuto delle chiavi dell oggetto : score, foul
 const scorefoulgenerator = teams.map((element) => {
     //   usare la funzione per i numeri randomici
-
     return {
         name: element.name,
         score: Math.floor(Math.random() * 10 + 1),
