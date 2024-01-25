@@ -46,12 +46,17 @@ const scorefoulgenerator = teams.map((element) => {
     }
 })
 console.log(scorefoulgenerator);
+const namefoulprint = scorefoulgenerator.map((element) => {
+const {name, foul} = element;
+return {
+    name: name,
+    foul: foul
+}
+});
 
 // - creare un nuovo array di oggetti contententi nomi e falli subiti
 //  - utilizzare il destructuring quindi variabile {} = nome array
 
-const {name, foul } = scorefoulgenerator;
-
-console.log(name, foul);
+console.log(namefoulprint);
 
 
